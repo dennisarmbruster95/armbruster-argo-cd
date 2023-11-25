@@ -7,7 +7,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://gitlab.dennis-armbruster.de/armbruster-server/argo-cd.git
+    repoURL: https://github.com/dennisarmbruster95/armbruster-argo-cd.git
     path: charts/root-app/
     targetRevision: HEAD
   destination:
