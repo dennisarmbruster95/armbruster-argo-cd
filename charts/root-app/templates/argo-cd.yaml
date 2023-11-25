@@ -12,8 +12,7 @@ spec:
     targetRevision: HEAD
   destination:
     server: https://imperium-armbruster.ddns.net
-    namespace: argo-cd
+    namespace: default
   syncPolicy:
     automated:
       selfHeal: true
-
