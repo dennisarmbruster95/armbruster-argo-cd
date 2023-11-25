@@ -15,7 +15,7 @@ spec:
         pushgateway:
           enabled: false
   destination:
-    server: https://imperium-armbruster.ddns.net
+    server: https://kubernetes.default.svc
     namespace: monitoring
   syncPolicy:
     automated:
