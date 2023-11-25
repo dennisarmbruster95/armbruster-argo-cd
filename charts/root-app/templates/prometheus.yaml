@@ -15,8 +15,8 @@ spec:
         pushgateway:
           enabled: false
   destination:
-    server: https://kubernetes.default.svc
-    namespace: argo-cd
+    server: https://imperium-armbruster.ddns.net
+    namespace: monitoring
   syncPolicy:
     automated:
       prune: true

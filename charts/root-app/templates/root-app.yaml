@@ -7,13 +7,12 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/arthurk/argocd-example-install.git
+    repoURL: https://gitlab.dennis-armbruster.de/armbruster-server/argo-cd
     path: charts/root-app/
     targetRevision: HEAD
   destination:
-    server: https://kubernetes.default.svc
-    namespace: default
+    server: https://imperium-armbruster.ddns.net
+    namespace: argo-cd
   syncPolicy:
     automated:
       selfHeal: true
-
