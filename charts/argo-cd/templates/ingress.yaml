@@ -1,15 +1,10 @@
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: argo-cd-server-ingress
-  namespace: default
-  annotations:
-    nginx.ingress.kubernetes.io/force-ssl-redirect: "true"
-    nginx.ingress.kubernetes.io/ssl-passthrough: "true"
+  name: argo-cd-ingress
 spec:
-  ingressClassName: nginx
   rules:
-  - host: https://kubernetes.default.svc
+  - host: imperium-armbruster.ddns.net
     http:
       paths:
       - path: /
@@ -18,4 +13,5 @@ spec:
           service:
             name: argo-cd-argocd-server
             port:
-              number: 8081
+              number: 80
+  ingressClassName: nginx
