@@ -5,3 +5,21 @@ dependencies:
   - name: argo-cd
     version: 5.46.8
     repository: https://argoproj.github.io/argo-helm
+---
+apiVersion: v2
+description: The Cloud-Native Ingress and API-management
+home: https://konghq.com/
+icon: https://s3.amazonaws.com/downloads.kong/universe/assets/icon-kong-inc-large.png
+maintainers:
+  - name: team-k8s-bot
+    email: team-k8s@konghq.com
+name: kong
+sources:
+  - https://github.com/Kong/charts/tree/main/charts/kong
+version: 2.32.0
+appVersion: "3.4"
+dependencies:
+  - name: postgresql
+    version: 11.9.13
+    repository: https://charts.bitnami.com/bitnami
+    condition: postgresql.enabled
