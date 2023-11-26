@@ -8,7 +8,7 @@ spec:
   project: default
   source:
     repoURL: https://charts.konghq.com
-    chart: prometheus
+    chart: kong
     targetRevision: 2.32.0
     helm:
       values: |
