@@ -1,0 +1,17 @@
+apiVersion: gateway.networking.k8s.io/v1
+kind: HTTPRoute
+metadata:
+  name: argo-cd-httproute
+spec:
+  parentRefs:
+  - name: http-gateway
+  hostnames:
+  - "www.imperium-armbruster.ddns.net"
+  rules:
+  - matches:
+    - path:
+        type: PathPrefix
+        value: /argo-cd
+    backendRefs:
+    - name: argo-cd-argocd-server
+      port: 8080
