@@ -1,0 +1,18 @@
+image:
+  repository: kong
+  tag: "3.1"
+env:
+  prefix: /kong_prefix/
+  database: "off"
+  log_level: "debug"
+  stream_listem: 0.0.0.0:8080
+ingressController:
+  installCRDs: false
+  enabled: true
+  image: "2.8"
+proxy:
+  enabled: true
+  stream:
+    - containerPort: 8080
+      servicePort: 8080
+      protocol: TCP
