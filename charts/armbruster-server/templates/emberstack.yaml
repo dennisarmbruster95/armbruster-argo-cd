@@ -7,7 +7,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/emberstack/helm-charts
+    repoURL: https://emberstack.github.io/helm-charts/
     chart: emberstack
     targetRevision: master
   destination:
