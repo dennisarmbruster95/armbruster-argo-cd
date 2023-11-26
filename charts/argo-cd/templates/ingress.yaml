@@ -9,7 +9,7 @@ metadata:
 spec:
   ingressClassName: nginx
   rules:
-  - host: argocd.imperium-armbruster.ddns.net
+  - host: argo-cd.imperium-armbruster.ddns.net
     http:
       paths:
       - path: /
@@ -19,3 +19,4 @@ spec:
             name: argo-cd-argocd-server
             port:
               name: https
+              number: 8081
