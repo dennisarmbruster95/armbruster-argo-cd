@@ -9,7 +9,7 @@ spec:
   source:
     repoURL: https://github.com/kubernetes/ingress-nginx
     chart: ingress-nginx
-    targetRevision: helm-chart-4.8.3
+    targetRevision: 4.8.3
     helm:
       values: |
         pushgateway:
