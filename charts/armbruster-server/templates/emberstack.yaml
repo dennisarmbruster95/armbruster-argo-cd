@@ -7,7 +7,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/emberstack/kubernetes-reflector
+    repoURL: https://github.com/emberstack/kubernetes-reflector/tree/main/src/helm/reflector
     chart: emberstack
     targetRevision: v7.1.216
   destination:
