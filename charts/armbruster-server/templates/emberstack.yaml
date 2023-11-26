@@ -9,11 +9,7 @@ spec:
   source:
     repoURL: https://github.com/emberstack/helm-charts
     chart: emberstack
-    targetRevision: HEAD
-    helm:
-      values: |
-        pushgateway:
-          enabled: false
+    targetRevision: master
   destination:
     server: https://kubernetes.default.svc
     namespace: ingress
