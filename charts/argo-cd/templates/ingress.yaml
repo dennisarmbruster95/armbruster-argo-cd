@@ -18,5 +18,4 @@ spec:
           service:
             name: argo-cd-argocd-server
             port:
-              name: https
               number: 8081
