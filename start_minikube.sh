@@ -1,1 +1,1 @@
-minikube start --memory 8192 --cpus 8
+minikube start --memory 6144 --cpus 8
