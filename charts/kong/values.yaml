@@ -2,7 +2,7 @@
 
 image:
   repository: kong
-  tag: "3.5"
+  tag: "3.4.x"
 
 env:
   prefix: /kong_prefix/
@@ -14,7 +14,7 @@ ingressController:
   installCRDs: true
   enabled: true
   image:
-    tag: "3.0"
+    tag: "3.0.x"
 
 proxy:
   enabled: true
