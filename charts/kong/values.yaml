@@ -22,3 +22,6 @@ proxy:
     - containerPort: 1883
       servicePort: 1883
       protocol: TCP
+
+admin:
+  useTLS: false
