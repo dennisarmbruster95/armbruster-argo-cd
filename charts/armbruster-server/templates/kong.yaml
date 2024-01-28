@@ -2,10 +2,11 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: kong
+  namespace: ingress
   finalizers:
   - resources-finalizer.argocd.argoproj.io
 spec:
-  project: default
+  project: infrastructure
   source:
     repoURL: https://github.com/dennisarmbruster95/armbruster-argo-cd.git
     path: charts/kong
