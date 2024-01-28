@@ -10,8 +10,6 @@ spec:
     repoURL: https://github.com/dennisarmbruster95/armbruster-argo-cd.git
     path: charts/kong
     targetRevision: HEAD
-admin:
-  useTLS: false
   destination:
     server: https://kubernetes.default.svc
     namespace: ingress
