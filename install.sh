@@ -1,5 +1,3 @@
-kubectl create ns monitoring
-minikube addons enable ingress
 helm repo add argo-cd https://argoproj.github.io/argo-helm
 helm repo add kong https://charts.konghq.com
 helm repo add emberstack https://emberstack.github.io/helm-charts
