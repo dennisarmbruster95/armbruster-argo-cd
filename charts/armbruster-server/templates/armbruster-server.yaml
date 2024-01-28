@@ -8,7 +8,7 @@ metadata:
   finalizers:
   - resources-finalizer.argocd.argoproj.io
 spec:
-  project: default
+  project: argo-cd
   source:
     repoURL: https://github.com/dennisarmbruster95/armbruster-argo-cd.git
     path: charts/armbruster-server/
