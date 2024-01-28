@@ -1,7 +1,8 @@
 apiVersion: v2
 name: argo-cd
 namespace: argo-cd
-meta.helm.sh/release-namespace: argo-cd
+labels:
+  meta.helm.sh/release-namespace: argo-cd
 version: 1.0.0
 dependencies:
   - name: argo-cd
