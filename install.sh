@@ -6,5 +6,5 @@ helm repo add emberstack https://emberstack.github.io/helm-charts
 helm repo update
 helm upgrade --install reflector emberstack/reflector
 helm dep update charts/argo-cd/
-helm install argo-cd charts/argo-cd/
+helm install -n argo-cd argo-cd charts/argo-cd/
 helm template charts/armbruster-server/ | kubectl apply -f -
