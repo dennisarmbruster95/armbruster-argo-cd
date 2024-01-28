@@ -7,6 +7,18 @@ image:
 env:
   prefix: /kong_prefix/
   database: "off"
+  log_level: "debug"
+  stream_listen: 0.0.0.0:1883
 
 ingressController:
+  installCRDs: true
   enabled: true
+  image:
+    tag: "3.0"
+
+proxy:
+  enabled: true
+  stream:
+    - containerPort: 1883
+      servicePort: 1883
+      protocol: TCP
