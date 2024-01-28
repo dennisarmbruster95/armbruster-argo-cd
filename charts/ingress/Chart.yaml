@@ -3,5 +3,5 @@ name: ingress
 version: 1.0.0
 dependencies:
   - name: ingress
-    version: ingress-0.10.2
+    version: 0.10.2
     repository: https://charts.konghq.com
