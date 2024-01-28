@@ -1,3 +1,6 @@
+kubectl create ns argo-cd
+kubectl create ns ingress
+kubectl create ns monitoring
 helm repo add argo-cd https://argoproj.github.io/argo-helm
 helm repo add kong https://charts.konghq.com
 helm repo add emberstack https://emberstack.github.io/helm-charts
