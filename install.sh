@@ -1,6 +1,4 @@
 kubectl create ns monitoring
-kubectl create ns nextcloud
-kubectl create ns ingress
 minikube addons enable ingress
 helm repo add argo-cd https://argoproj.github.io/argo-helm
 helm repo add kong https://charts.konghq.com
