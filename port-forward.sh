@@ -1,1 +1,1 @@
-kubectl port-forward svc/argo-cd-argocd-server 8080:443
+kubectl port-forward -n argo-cd svc/argo-cd-argocd-server 8080:443
