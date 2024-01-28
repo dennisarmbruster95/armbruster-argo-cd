@@ -1,1 +1,1 @@
-minikube stop && minikube delete && ./start_minikube.sh
+minikube stop && minikube delete && ./start_minikube.sh && git pull
