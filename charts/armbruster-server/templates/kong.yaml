@@ -6,14 +6,38 @@ metadata:
   finalizers:
   - resources-finalizer.argocd.argoproj.io
 spec:
-  project: infrastructure
+  project: ingress
   source:
-    repoURL: https://github.com/dennisarmbruster95/armbruster-argo-cd.git
-    path: charts/kong
-    targetRevision: HEAD
+    repoURL: https://charts.konghq.com
+    chart: kong
+    targetRevision: 2.34.0
+    helm:
+      values: |
+        image:
+          repository: kong
+          tag: "3.1"
+        env:
+          prefix: /kong_prefix/
+          database: "off"
+          log_level: "debug"
+          stream_listen: 0.0.0.0:1883
+        ingressController:
+          installCRDs: true
+          enabled: true
+          image:
+            tag: "2.8"
+        proxy:
+          enabled: true
+          stream:
+            - containerPort: 1883
+              servicePort: 1883
+              protocol: TCP
+        admin:
+          useTLS: false
   destination:
     server: https://kubernetes.default.svc
     namespace: ingress
   syncPolicy:
     automated:
+      prune: true
       selfHeal: true
