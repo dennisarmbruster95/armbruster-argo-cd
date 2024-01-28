@@ -1,0 +1,1 @@
+git pull && cluster_clear.sh && cluster_clear.start.sh && install.sh
