@@ -3,8 +3,6 @@ kind: Application
 metadata:
   name: kong
   namespace: ingress
-  annotations:
-    meta.helm.sh/release-namespace: ingress
   finalizers:
   - resources-finalizer.argocd.argoproj.io
 spec:

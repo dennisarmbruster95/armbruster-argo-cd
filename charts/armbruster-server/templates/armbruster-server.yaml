@@ -3,8 +3,6 @@ kind: Application
 metadata:
   name: armbruster-server
   namespace: argo-cd
-  annotations:
-    meta.helm.sh/release-namespace: argo-cd
   finalizers:
   - resources-finalizer.argocd.argoproj.io
 spec:
